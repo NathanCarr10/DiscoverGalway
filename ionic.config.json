@@ -1,0 +1,7 @@
+{
+  "name": "DiscoverGalway",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
