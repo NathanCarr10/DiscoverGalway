@@ -1,15 +1,14 @@
-import { Component, AfterViewInit } from '@angular/core';
-import { Geolocation } from '@capacitor/geolocation';
+import { Component } from '@angular/core';
+import { IonicModule } from '@ionic/angular';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-map',
   templateUrl: './map.page.html',
   styleUrls: ['./map.page.scss'],
+  standalone: true,
+  imports: [CommonModule, IonicModule]
 })
-export class MapPage implements AfterViewInit {
-
-  async ngAfterViewInit() {
-    const coordinates = await Geolocation.getCurrentPosition();
-    console.log('Current position:', coordinates);
-  }
+export class MapPage {
+  //Map API to be added here later
 }
