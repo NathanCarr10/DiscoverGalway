@@ -11,10 +11,12 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  
   {
     path: 'sightseeing',
-    loadChildren: () => import('./sightseeing/sightseeing.module').then( m => m.SightseeingPageModule)
+    loadComponent: () => import('./sightseeing/sightseeing.page').then(m => m.SightseeingPage)
   },
+
   {
     path: 'food-drink',
     loadChildren: () => import('./food-drink/food-drink.module').then( m => m.FoodDrinkPageModule)
@@ -32,7 +34,7 @@ const routes: Routes = [
     path: 'getting-around',
     loadComponent: () => import('./getting-around/getting-around.page').then(m => m.GettingAroundPage)
   },
-  
+
   {
     path: 'emergency-info',
     loadChildren: () => import('./emergency-info/emergency-info.module').then( m => m.EmergencyInfoPageModule)
