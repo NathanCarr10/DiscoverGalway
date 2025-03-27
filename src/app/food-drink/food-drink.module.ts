@@ -1,11 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-
 import { IonicModule } from '@ionic/angular';
-
 import { FoodDrinkPageRoutingModule } from './food-drink-routing.module';
-
 import { FoodDrinkPage } from './food-drink.page';
 
 @NgModule({
@@ -13,8 +10,8 @@ import { FoodDrinkPage } from './food-drink.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    FoodDrinkPageRoutingModule
-  ],
-  declarations: [FoodDrinkPage]
+    FoodDrinkPageRoutingModule,
+    FoodDrinkPage
+  ]
 })
 export class FoodDrinkPageModule {}
