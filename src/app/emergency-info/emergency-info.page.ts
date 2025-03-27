@@ -8,6 +8,6 @@ import { FormsModule } from '@angular/forms';
   templateUrl: './emergency-info.page.html',
   styleUrls: ['./emergency-info.page.scss'],
   standalone: true,
-  imports: [CommonModule, FormsModule, IonicModule] // ✅ Add IonicModule here
+  imports: [CommonModule, FormsModule, IonicModule]
 })
 export class EmergencyInfoPage {}
