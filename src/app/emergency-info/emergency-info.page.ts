@@ -1,15 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { IonicModule } from '@ionic/angular';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-emergency-info',
   templateUrl: './emergency-info.page.html',
   styleUrls: ['./emergency-info.page.scss'],
+  standalone: true,
+  imports: [CommonModule, FormsModule, IonicModule] // ✅ Add IonicModule here
 })
-export class EmergencyInfoPage implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-}
+export class EmergencyInfoPage {}
