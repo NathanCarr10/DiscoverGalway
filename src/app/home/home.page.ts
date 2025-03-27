@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DataService } from '../services/data.service';
 
 @Component({
   selector: 'app-home',
@@ -7,7 +8,14 @@ import { Component } from '@angular/core';
   standalone: false,
 })
 export class HomePage {
+  constructor(private dataService: DataService) {}
 
-  constructor() {}
+  async saveData() {
+    await this.dataService.setData('userPreferences', { theme: 'dark' });
+  }
 
+  async loadData() {
+    const data = await this.dataService.getData('userPreferences');
+    console.log('Loaded data:', data);
+  }
 }
