@@ -30,8 +30,9 @@ const routes: Routes = [
   
   {
     path: 'getting-around',
-    loadChildren: () => import('./getting-around/getting-around.module').then( m => m.GettingAroundPageModule)
+    loadComponent: () => import('./getting-around/getting-around.page').then(m => m.GettingAroundPage)
   },
+  
   {
     path: 'emergency-info',
     loadChildren: () => import('./emergency-info/emergency-info.module').then( m => m.EmergencyInfoPageModule)

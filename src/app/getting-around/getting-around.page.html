@@ -1,13 +1,16 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>getting-around</ion-title>
+    <ion-title>Getting Around</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">getting-around</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let transport of transportOptions">
+      <ion-label>
+        <h2>{{ transport.type }}</h2>
+        <p>{{ transport.description }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
 </ion-content>
