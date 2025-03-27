@@ -11,6 +11,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'sightseeing',
+    loadChildren: () => import('./sightseeing/sightseeing.module').then( m => m.SightseeingPageModule)
+  },
 ];
 
 @NgModule({
