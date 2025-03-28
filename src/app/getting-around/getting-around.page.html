@@ -6,11 +6,17 @@
 
 <ion-content>
   <ion-list>
-    <ion-item *ngFor="let transport of transportOptions">
-      <ion-label>
-        <h2>{{ transport.type }}</h2>
-        <p>{{ transport.description }}</p>
-      </ion-label>
+    <ion-item routerLink="/bus-routes">
+      <ion-label>Bus</ion-label>
+    </ion-item>
+    <ion-item routerLink="/taxi">
+      <ion-label>Taxi</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Rent A Car</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Ceannt Train Station</ion-label>
     </ion-item>
   </ion-list>
 </ion-content>

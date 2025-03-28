@@ -39,6 +39,12 @@ const routes: Routes = [
     path: 'emergency-info',
     loadChildren: () => import('./emergency-info/emergency-info.module').then( m => m.EmergencyInfoPageModule)
   },
+
+  {
+    path: 'bus-routes',
+    loadComponent: () => import('./bus-routes/bus-routes.page').then(m => m.BusRoutesPage)
+  }
+  
 ];
 
 @NgModule({
