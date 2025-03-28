@@ -5,12 +5,13 @@
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <ion-item *ngFor="let sight of sights">
-      <ion-label>
-        <h2>{{ sight.name }}</h2>
-        <p>{{ sight.description }}</p>
-      </ion-label>
-    </ion-item>
-  </ion-list>
+  <ion-card *ngFor="let sight of sights">
+    <ion-img [src]="sight.image"></ion-img>
+    <ion-card-header>
+      <ion-card-title>{{ sight.name }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      {{ sight.description }}
+    </ion-card-content>
+  </ion-card>
 </ion-content>
