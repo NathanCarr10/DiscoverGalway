@@ -43,8 +43,13 @@ const routes: Routes = [
   {
     path: 'bus-routes',
     loadComponent: () => import('./bus-routes/bus-routes.page').then(m => m.BusRoutesPage)
+  },
+   
+  {
+    path: 'bus-401',
+    loadComponent: () => import('./bus-401/bus-401.page').then(m => m.Bus401Page)
   }
-  
+
 ];
 
 @NgModule({
