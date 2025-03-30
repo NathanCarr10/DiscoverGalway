@@ -53,6 +53,11 @@ const routes: Routes = [
   {
     path: 'bus-402',
     loadComponent: () => import('./bus-402/bus-402.page').then(m => m.Bus402Page)
+  },
+
+  {
+    path: 'bus-405',
+    loadComponent: () => import('./bus-405/bus-405.page').then(m => m.Bus405Page)
   }
 
 ];
