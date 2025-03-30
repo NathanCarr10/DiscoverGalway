@@ -1,15 +1,23 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { CommonModule, Location } from '@angular/common';
+import { IonicModule } from '@ionic/angular';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-footer-nav',
-  templateUrl: './footer-nav.component.html',
-  styleUrls: ['./footer-nav.component.scss'],
   standalone: true,
+  imports: [CommonModule, IonicModule, RouterModule],
+  templateUrl: './footer-nav.component.html',
+  styleUrls: ['./footer-nav.component.scss']
 })
-export class FooterNavComponent  implements OnInit {
+export class FooterNavComponent {
+  constructor(private location: Location) {}
 
-  constructor() { }
+  goBack() {
+    this.location.back();
+  }
 
-  ngOnInit() {}
-
+  goForward() {
+    window.history.forward();
+  }
 }
