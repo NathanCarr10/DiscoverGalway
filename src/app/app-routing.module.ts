@@ -73,8 +73,12 @@ const routes: Routes = [
   {
     path: 'taxi',
     loadComponent: () => import('./taxi/taxi.page').then(m => m.TaxiPage)
-  }
-  
+  },
+
+  {
+    path: 'train-station',
+    loadComponent: () => import('./train-station/train-station.page').then(m => m.TrainStationPage)
+  }  
 
 ];
 
