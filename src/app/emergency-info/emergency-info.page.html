@@ -1,16 +1,27 @@
-<ion-content>
-  <ion-list>
-    <ion-item>
-      <ion-label>Police</ion-label>
-      <ion-button href="tel:091538000">Call</ion-button>
-    </ion-item>
-    <ion-item>
-      <ion-label>Hospital</ion-label>
-      <ion-button href="tel:112">Call</ion-button>
-    </ion-item>
-    <ion-item>
-      <ion-label>Fire Station</ion-label>
-      <ion-button href="tel:999">Call</ion-button>
-    </ion-item>
-  </ion-list>
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Emergency Info</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-card *ngFor="let service of services">
+    <ion-img [src]="service.image" [alt]="service.type" style="height: 200px; object-fit: cover;"></ion-img>
+
+    <ion-card-header>
+      <ion-card-title>{{ service.type }}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <p>{{ service.description }}</p>
+
+      <ion-button expand="block" color="primary" fill="outline" (click)="getDirections(service.destination)">
+        Get Directions
+      </ion-button>
+
+      <ion-button expand="block" color="danger" (click)="callService(service.phone)">
+        Call {{ service.type }}
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
