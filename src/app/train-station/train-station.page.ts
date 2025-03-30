@@ -17,8 +17,8 @@ export class TrainStationPage {
     description: 'Galway’s central train station, offering routes to Dublin, Limerick, and more.',
     destinationQuery: 'Ceannt Train Station Galway',
     website: 'https://www.irishrail.ie/en-ie/station/galway-ceannt',
-    liveInfo: 'https://www.irishrail.ie/en-ie/train-times/galway',
-    tickets: 'https://www.irishrail.ie/en-ie/train-tickets',
+    liveInfo: 'https://www.irishrail.ie/en-ie/train-timetables/live-departure-train-times',
+    tickets: 'https://www.irishrail.ie/en-ie/rail-fares-and-tickets/fares-info',
     phone: '+35318733622'
   };
 
