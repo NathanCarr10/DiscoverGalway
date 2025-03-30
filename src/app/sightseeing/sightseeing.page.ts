@@ -1,14 +1,19 @@
 import { Component } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
 import { CommonModule } from '@angular/common';
+import { FooterNavComponent } from '../footer-nav/footer-nav.component';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-sightseeing',
   templateUrl: './sightseeing.page.html',
   styleUrls: ['./sightseeing.page.scss'],
   standalone: true,
-  imports: [CommonModule, IonicModule]
+  imports: [CommonModule, IonicModule, RouterModule, FooterNavComponent]
 })
+
+// SightseeingPage component to display a list of sights in Galway
+// and open them in a map application when clicked.
 export class SightseeingPage {
   sights = [
     {

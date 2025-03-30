@@ -7,13 +7,14 @@ import { IonicModule } from '@ionic/angular';
 import { GettingAroundPageRoutingModule } from './getting-around-routing.module';
 import { GettingAroundPage } from './getting-around.page';
 
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
     GettingAroundPageRoutingModule,
-    GettingAroundPage
+    GettingAroundPage,
   ]
 })
 export class GettingAroundPageModule {}

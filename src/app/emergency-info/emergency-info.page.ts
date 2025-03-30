@@ -2,13 +2,15 @@ import { Component } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
 import { CommonModule } from '@angular/common';
 import { Geolocation } from '@capacitor/geolocation';
+import { FooterNavComponent } from '../footer-nav/footer-nav.component';
+
 
 @Component({
   selector: 'app-emergency-info',
   templateUrl: './emergency-info.page.html',
   styleUrls: ['./emergency-info.page.scss'],
   standalone: true,
-  imports: [CommonModule, IonicModule]
+  imports: [CommonModule, IonicModule,FooterNavComponent]
 })
 export class EmergencyInfoPage {
   services = [

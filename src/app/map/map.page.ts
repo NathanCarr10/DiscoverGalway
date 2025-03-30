@@ -3,13 +3,15 @@ import { IonicModule } from '@ionic/angular';
 import { CommonModule } from '@angular/common';
 import * as L from 'leaflet';
 import { Geolocation } from '@capacitor/geolocation';
+import { FooterNavComponent } from '../footer-nav/footer-nav.component';
+
 
 @Component({
   selector: 'app-map',
   templateUrl: './map.page.html',
   styleUrls: ['./map.page.scss'],
   standalone: true,
-  imports: [CommonModule, IonicModule]
+  imports: [CommonModule, IonicModule, FooterNavComponent],
 })
 export class MapPage implements AfterViewInit {
   private map!: L.Map;
