@@ -19,11 +19,11 @@ const routes: Routes = [
 
   {
     path: 'food-drink',
-    loadChildren: () => import('./food-drink/food-drink.module').then( m => m.FoodDrinkPageModule)
+    loadComponent: () => import('./food-drink/food-drink.page').then(m => m.FoodDrinkPage)
   },
   {
     path: 'events',
-    loadChildren: () => import('./events/events.module').then( m => m.EventsPageModule)
+    loadComponent: () => import('./events/events.page').then(m => m.EventsPage)
   },
   {
     path: 'map',
@@ -37,7 +37,7 @@ const routes: Routes = [
 
   {
     path: 'emergency-info',
-    loadChildren: () => import('./emergency-info/emergency-info.module').then( m => m.EmergencyInfoPageModule)
+    loadComponent: () => import('./emergency-info/emergency-info.page').then(m => m.EmergencyInfoPage)
   },
 
   {
