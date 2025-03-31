@@ -66,6 +66,27 @@
       </ion-col>
     </ion-row>
   </ion-grid>
+
+  <ion-card *ngIf="weather">
+    <ion-card-header>
+      <ion-card-title>Current Weather in Galway</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item lines="none">
+        <ion-icon name="partly-sunny-outline" slot="start"></ion-icon>
+        <ion-label>
+          <h2>{{ weather.current.temp_c }}°C - {{ weather.current.condition.text }}</h2>
+          <p>Feels like: {{ weather.current.feelslike_c }}°C</p>
+        </ion-label>
+        <ion-img
+          [src]="'https:' + weather.current.condition.icon"
+          alt="Weather icon"
+          style="width: 50px; height: 50px"
+          slot="end">
+        </ion-img>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
 
 <app-footer-nav></app-footer-nav>
