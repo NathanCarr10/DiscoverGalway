@@ -3,7 +3,18 @@ import type { CapacitorConfig } from '@capacitor/cli';
 const config: CapacitorConfig = {
   appId: 'io.ionic.starter',
   appName: 'DiscoverGalway',
-  webDir: 'www'
+  webDir: 'www',
+
+  plugins: {
+    SplashScreen: {
+      launchAutoHide: false,
+      showDuration: 3000,
+      backgroundColor: '#ffffff',
+      androidScaleType: 'CENTER_CROP',
+      splashFullScreen: true,
+      splashImmersive: true
+    }
+  }
 };
 
 export default config;
