@@ -42,3 +42,7 @@ ion-content {
     color: white; //Text color to be white
   }
 
+  //To stop the content from being hidden behind the status bar at top of screen
+  ion-header, ion-toolbar {
+    padding-top: env(safe-area-inset-top);
+  }
