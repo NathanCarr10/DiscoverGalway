@@ -12,7 +12,6 @@ public class MainActivity extends BridgeActivity {
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
 
-    // 💡 For Android 10+ (including Galaxy S23 Ultra), force content below status bar
     if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.R) {
       getWindow().setDecorFitsSystemWindows(true);
     } else {

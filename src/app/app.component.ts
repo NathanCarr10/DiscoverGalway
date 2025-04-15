@@ -16,7 +16,7 @@ export class AppComponent {
   ) {
     this.initializeStorage();
     this.platform.ready().then(() => {
-      this.setStatusBar(); // Fix for top overlay issue
+      this.setStatusBar(); //Fix for top overlay issue
     });
   }
 
@@ -27,7 +27,7 @@ export class AppComponent {
   async setStatusBar() {
     try {
       await StatusBar.setStyle({ style: Style.Light });
-      await StatusBar.setBackgroundColor({ color: '#800000' }); 
+      await StatusBar.setBackgroundColor({ color: '#800000' });
       await StatusBar.setOverlaysWebView({ overlay: false }); 
     } catch (error) {
       console.warn('StatusBar plugin failed', error);
