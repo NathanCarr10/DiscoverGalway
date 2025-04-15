@@ -4,13 +4,12 @@ import { CommonModule } from '@angular/common';
 import { Geolocation } from '@capacitor/geolocation';
 import { FooterNavComponent } from '../footer-nav/footer-nav.component';
 
-
 @Component({
   selector: 'app-emergency-info',
   templateUrl: './emergency-info.page.html',
   styleUrls: ['./emergency-info.page.scss'],
   standalone: true,
-  imports: [CommonModule, IonicModule,FooterNavComponent]
+  imports: [CommonModule, IonicModule, FooterNavComponent]
 })
 export class EmergencyInfoPage {
   services = [
@@ -40,18 +39,17 @@ export class EmergencyInfoPage {
   async getDirections(destination: string) {
     try {
       const position = await Geolocation.getCurrentPosition();
-      const lat = position.coords.latitude;
-      const lng = position.coords.longitude;
+      const { latitude, longitude } = position.coords;
       const encodedDest = encodeURIComponent(destination);
-      const mapUrl = `https://www.google.com/maps/dir/?api=1&origin=${lat},${lng}&destination=${encodedDest}`;
-      window.open(mapUrl, '_system');
+      const mapUrl = `https://www.google.com/maps/dir/?api=1&origin=${latitude},${longitude}&destination=${encodedDest}`;
+      window.open(mapUrl, '_system'); // Opens in external maps app or browser
     } catch (err) {
       console.error('Location error:', err);
-      alert('Unable to access location.');
+      alert('Unable to access your location. Please enable GPS.');
     }
   }
 
   callService(phone: string) {
-    window.open(`tel:${phone}`, '_system');
+    window.open(`tel:${phone}`, '_system'); // Opens phone dialer
   }
 }
