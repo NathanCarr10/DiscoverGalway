@@ -37,12 +37,45 @@
 @import "@ionic/angular/css/palettes/dark.system.css";
 
 
+html,
+body,
+ion-app,
 ion-content {
-    --background: #800000; // Maroon background color
-    color: white; //Text color to be white
-  }
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
 
-  //To stop the content from being hidden behind the status bar at top of screen
-  ion-header, ion-toolbar {
-    padding-top: env(safe-area-inset-top);
-  }
+ion-header,
+ion-toolbar {
+  padding-top: env(safe-area-inset-top);
+}
+
+ion-page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+}
+
+ion-content {
+  --padding-bottom: 80px; // adjust based on footer height
+  --padding-top: env(safe-area-inset-top);
+  --padding-bottom: calc(env(safe-area-inset-bottom) + 80px); 
+}
+
+
+ion-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 999;
+  --background: #800000;
+}
+
+
+
+  

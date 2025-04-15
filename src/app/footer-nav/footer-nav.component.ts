@@ -13,11 +13,15 @@ import { RouterModule } from '@angular/router';
 export class FooterNavComponent {
   constructor(private location: Location) {}
 
-  goBack() {
+  goBack(): void {
     this.location.back();
   }
 
-  goForward() {
-    window.history.forward();
+  goForward(): void {
+    if (window.history.length > 1) {
+      window.history.forward();
+    } else {
+      console.warn('No forward history available.');
+    }
   }
 }

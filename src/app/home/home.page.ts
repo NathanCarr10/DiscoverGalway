@@ -7,12 +7,16 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { DataService } from '../services/data.service';
 import { FooterNavComponent } from '../footer-nav/footer-nav.component';
 
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+
+
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
   standalone: true,
-  imports: [CommonModule, IonicModule, RouterModule, FooterNavComponent, HttpClientModule]
+  imports: [CommonModule, IonicModule, RouterModule, FooterNavComponent, HttpClientModule],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class HomePage {
   weather: any;
