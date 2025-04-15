@@ -96,14 +96,13 @@ Created by Nathan Carr.
 ---
 
 ## 📸 Screenshots
+Home Screen  
+![Home](screenshots/homepage-screenshot.jpg)
 
-![Screenshot_20250415_190654](https://github.com/user-attachments/assets/a387c065-729f-4895-9acf-073b0f0421d8)
-![Screenshot_20250415_190635](https://github.com/user-attachments/assets/48eb55bc-7bbf-406b-b525-707571ad6dfa)
-![Screenshot_20250415_190624](https://github.com/user-attachments/assets/18aef23b-da6f-4c8b-a662-b487ea729d9f)
-![Screenshot_20250415_190615](https://github.com/user-attachments/assets/ae9b8531-73eb-48cf-9fe7-9f5fdbb7d070)
-![Screenshot_20250415_190602](https://github.com/user-attachments/assets/fbb3b5d7-0d78-4884-824c-33c43c18f0b0)
-![Screenshot_20250415_190544](https://github.com/user-attachments/assets/559a6f38-8904-43ac-9494-ee2be5c52ee4)
-![Screenshot_20250415_190528](https://github.com/user-attachments/assets/e7769ec9-5110-4229-976e-59ce35cb1659)
-![Screenshot_20250415_190519](https://github.com/user-attachments/assets/7560f802-7905-401c-ab5b-3ce450991127)
-![Screenshot_20250415_190648](https://github.com/user-attachments/assets/2c184b9f-1a19-439a-86d0-a72c025fef25)
+Events Page  
+![Events](screenshots/events-screenshot.jpg)
+
+Map View  
+![Map](screenshots/map-screenshot.jpg)
+
 
