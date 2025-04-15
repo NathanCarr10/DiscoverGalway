@@ -34,7 +34,16 @@ Built using the Ionic Framework and Angular with Capacitor for native mobile fea
 
 ## 📸 Screenshots
 
-_Add screenshots here if you have them. Recommended size: 800px width._
+![Screenshot_20250415_190648](https://github.com/user-attachments/assets/f86a4398-5ce0-4656-871d-6a652f539c4c)
+![Screenshot_20250415_190654](https://github.com/user-attachments/assets/fcc7dc10-7818-4ba7-bf8b-d5fba3b7cee6)
+![Screenshot_20250415_190635](https://github.com/user-attachments/assets/47c1e87f-c9d2-4c04-adb3-fa9fe0559d7d)
+![Screenshot_20250415_190624](https://github.com/user-attachments/assets/1b67395b-5fa2-4b27-816f-adaff87ad3bd)
+![Screenshot_20250415_190615](https://github.com/user-attachments/assets/73ba9f69-a9fc-4854-9114-71b6987a955b)
+![Screenshot_20250415_190602](https://github.com/user-attachments/assets/5278997f-56d9-410c-bb6a-87c20e7e4357)
+![Screenshot_20250415_190544](https://github.com/user-attachments/assets/6ab7da34-5ba2-48e3-8006-57d1793b3661)
+![Screenshot_20250415_190528](https://github.com/user-attachments/assets/0867f01b-f750-4365-adea-f2226d25770a)
+![Screenshot_20250415_190519](https://github.com/user-attachments/assets/549a1e93-81da-4de2-813c-2c3fe6343f39)
+
 
 ---
 
