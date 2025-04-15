@@ -97,12 +97,13 @@ Created by Nathan Carr.
 
 ## 📸 Screenshots
 
-![Screenshot_20250415_190648](https://github.com/user-attachments/assets/f86a4398-5ce0-4656-871d-6a652f539c4c)
-![Screenshot_20250415_190654](https://github.com/user-attachments/assets/fcc7dc10-7818-4ba7-bf8b-d5fba3b7cee6)
-![Screenshot_20250415_190635](https://github.com/user-attachments/assets/47c1e87f-c9d2-4c04-adb3-fa9fe0559d7d)
-![Screenshot_20250415_190624](https://github.com/user-attachments/assets/1b67395b-5fa2-4b27-816f-adaff87ad3bd)
-![Screenshot_20250415_190615](https://github.com/user-attachments/assets/73ba9f69-a9fc-4854-9114-71b6987a955b)
-![Screenshot_20250415_190602](https://github.com/user-attachments/assets/5278997f-56d9-410c-bb6a-87c20e7e4357)
-![Screenshot_20250415_190544](https://github.com/user-attachments/assets/6ab7da34-5ba2-48e3-8006-57d1793b3661)
-![Screenshot_20250415_190528](https://github.com/user-attachments/assets/0867f01b-f750-4365-adea-f2226d25770a)
-![Screenshot_20250415_190519](https://github.com/user-attachments/assets/549a1e93-81da-4de2-813c-2c3fe6343f39)
+![Screenshot_20250415_190654](https://github.com/user-attachments/assets/a387c065-729f-4895-9acf-073b0f0421d8)
+![Screenshot_20250415_190635](https://github.com/user-attachments/assets/48eb55bc-7bbf-406b-b525-707571ad6dfa)
+![Screenshot_20250415_190624](https://github.com/user-attachments/assets/18aef23b-da6f-4c8b-a662-b487ea729d9f)
+![Screenshot_20250415_190615](https://github.com/user-attachments/assets/ae9b8531-73eb-48cf-9fe7-9f5fdbb7d070)
+![Screenshot_20250415_190602](https://github.com/user-attachments/assets/fbb3b5d7-0d78-4884-824c-33c43c18f0b0)
+![Screenshot_20250415_190544](https://github.com/user-attachments/assets/559a6f38-8904-43ac-9494-ee2be5c52ee4)
+![Screenshot_20250415_190528](https://github.com/user-attachments/assets/e7769ec9-5110-4229-976e-59ce35cb1659)
+![Screenshot_20250415_190519](https://github.com/user-attachments/assets/7560f802-7905-401c-ab5b-3ce450991127)
+![Screenshot_20250415_190648](https://github.com/user-attachments/assets/2c184b9f-1a19-439a-86d0-a72c025fef25)
+
