@@ -1,42 +1,28 @@
 /*
  * App Global CSS
  * ----------------------------------------------------------------------------
- * Put style rules here that you want to apply globally. These styles are for
- * the entire app and not just one component. Additionally, this file can be
- * used as an entry point to import other CSS/Sass files to be included in the
- * output CSS.
- * For more information on global stylesheets, visit the documentation:
- * https://ionicframework.com/docs/layout/global-stylesheets
+ * This file contains styles applied across the entire app.
+ * You can also import other CSS/Sass files from here.
  */
 
-/* Core CSS required for Ionic components to work properly */
+/* Ionic core and structural CSS */
 @import "@ionic/angular/css/core.css";
-
-/* Basic CSS for apps built with Ionic */
 @import "@ionic/angular/css/normalize.css";
 @import "@ionic/angular/css/structure.css";
 @import "@ionic/angular/css/typography.css";
 @import "@ionic/angular/css/display.css";
 
-/* Optional CSS utils that can be commented out */
+/* Optional utilities */
 @import "@ionic/angular/css/padding.css";
 @import "@ionic/angular/css/float-elements.css";
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
 
-/**
- * Ionic Dark Mode
- * -----------------------------------------------------
- * For more info, please see:
- * https://ionicframework.com/docs/theming/dark-mode
- */
-
-/* @import "@ionic/angular/css/palettes/dark.always.css"; */
-/* @import "@ionic/angular/css/palettes/dark.class.css"; */
+/* Dark mode support — system preference */
 @import "@ionic/angular/css/palettes/dark.system.css";
 
-
+/* Global element resets and layout setup */
 html,
 body,
 ion-app,
@@ -49,11 +35,13 @@ ion-content {
   position: relative;
 }
 
+/* Ensure header/toolbars respect safe area (notch) */
 ion-header,
 ion-toolbar {
   padding-top: env(safe-area-inset-top);
 }
 
+/* Pages take full screen height using Flexbox */
 ion-page {
   display: flex;
   flex-direction: column;
@@ -61,13 +49,13 @@ ion-page {
   position: relative;
 }
 
+/* Adjust padding for content area considering fixed footer */
 ion-content {
-  --padding-bottom: 80px; // adjust based on footer height
   --padding-top: env(safe-area-inset-top);
-  --padding-bottom: calc(env(safe-area-inset-bottom) + 80px); 
+  --padding-bottom: calc(env(safe-area-inset-bottom) + 80px); // Footer height
 }
 
-
+/* Footer positioning and styling */
 ion-footer {
   position: fixed;
   bottom: 0;
@@ -75,7 +63,3 @@ ion-footer {
   z-index: 999;
   --background: #800000;
 }
-
-
-
-  

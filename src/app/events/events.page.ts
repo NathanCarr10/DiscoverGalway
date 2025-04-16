@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { FooterNavComponent } from '../footer-nav/footer-nav.component';
 
-
+// Displays a list of upcoming events in Galway
 @Component({
   selector: 'app-events',
   templateUrl: './events.page.html',
@@ -12,11 +12,8 @@ import { FooterNavComponent } from '../footer-nav/footer-nav.component';
   standalone: true,
   imports: [CommonModule, FormsModule, IonicModule, FooterNavComponent],
 })
-
-
-
 export class EventsPage {
-
+  // List of featured Galway events
   events = [
     {
       name: 'Galway Race Week',
@@ -54,10 +51,9 @@ export class EventsPage {
       mapLink: 'geo:0,0?q=Fisheries+Field+Galway'
     }
   ];
-  
+
+  // Opens native map app using geo URI
   openMap(link: string) {
     window.open(link, '_system');
   }
 }
-
-

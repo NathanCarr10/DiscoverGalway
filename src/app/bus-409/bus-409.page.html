@@ -1,24 +1,30 @@
 <ion-header>
-    <ion-toolbar>
-      <ion-title>409 - Parkmore</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  
-  <ion-content class="ion-padding">
-    <ion-card>
-      <ion-card-header>
-        <ion-card-title>Timetable</ion-card-title>
-      </ion-card-header>
-      <ion-card-content>
-        <pinch-zoom style="display: block; width: 100%; height: auto;">
-          <img
-            src="assets/images/bus-409-timetable.jpg"
-            alt="401 Bus Timetable"
-            style="width: 100%; height: auto;" />
-        </pinch-zoom>
-        <p style="margin-top: 10px; font-size: 0.9em;">Pinch to zoom and pan the timetable.</p>
-      </ion-card-content>
-    </ion-card>
-  </ion-content>
-  
-  <app-footer-nav></app-footer-nav>
+  <ion-toolbar>
+    <ion-title>409 - Parkmore</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Timetable</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <!-- Timetable image with pinch-to-zoom functionality -->
+      <pinch-zoom style="display: block; width: 100%; height: auto;">
+        <img
+          src="assets/images/bus-409-timetable.jpg"
+          alt="409 Bus Timetable"
+          style="width: 100%; height: auto;" />
+      </pinch-zoom>
+
+      <p style="margin-top: 10px; font-size: 0.9em;">
+        Pinch to zoom and pan the timetable.
+      </p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+<!-- Bottom tab navigation -->
+<app-footer-nav></app-footer-nav>

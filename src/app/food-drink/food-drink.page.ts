@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { FooterNavComponent } from '../footer-nav/footer-nav.component';
 
-
+// Displays a list of food and drink spots around Galway
 @Component({
   selector: 'app-food-drink',
   templateUrl: './food-drink.page.html',
@@ -13,6 +13,7 @@ import { FooterNavComponent } from '../footer-nav/footer-nav.component';
   imports: [CommonModule, FormsModule, IonicModule, FooterNavComponent],
 })
 export class FoodDrinkPage {
+  // List of featured places to eat and drink
   foodPlaces = [
     {
       name: 'An Púcán',
@@ -22,14 +23,14 @@ export class FoodDrinkPage {
       mapLink: 'geo:0,0?q=An+Púcán+Galway'
     },
     {
-      name: 'McDonagh\'s Seafood House',
+      name: "McDonagh's Seafood House",
       type: 'Seafood',
       description: 'Fresh fish & chips, oysters, and Galway’s famous seafood.',
       image: 'assets/images/mcdonaghs.jpg',
       mapLink: 'geo:0,0?q=McDonagh\'s+Seafood+Galway'
     },
     {
-      name: 'The King’s Head',
+      name: "The King’s Head",
       type: 'Historic Pub',
       description: '800-year-old pub with live music and hearty Irish food.',
       image: 'assets/images/kings-head.jpg',
@@ -50,9 +51,9 @@ export class FoodDrinkPage {
       mapLink: 'geo:0,0?q=Supermacs+Eyre+Square+Galway'
     }
   ];
-  
+
+  // Opens location in external map app
   openMap(link: string) {
     window.open(link, '_system');
   }
-
 }

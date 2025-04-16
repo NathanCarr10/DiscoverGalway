@@ -1,17 +1,19 @@
 <ion-header>
-    <ion-toolbar>
-      <ion-title>Bus Routes</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  
-  <ion-content>
-    <ion-list>
-      <ion-item routerLink="/bus-401">401 - Salthill</ion-item>
-      <ion-item routerLink="/bus-402">402 - Merlin Park</ion-item>
-      <ion-item routerLink="/bus-405">405- Rahoon/Newcastle</ion-item>
-      <ion-item routerLink="/bus-407">407 - Bóthar an Chóiste</ion-item>
-      <ion-item routerLink="/bus-409">409- Parkmore</ion-item>
-    </ion-list>
-  </ion-content>
-  
-  <app-footer-nav></app-footer-nav>
+  <ion-toolbar>
+    <ion-title>Bus Routes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <!-- Each list item links to a bus timetable page -->
+    <ion-item routerLink="/bus-401">401 - Salthill</ion-item>
+    <ion-item routerLink="/bus-402">402 - Merlin Park</ion-item>
+    <ion-item routerLink="/bus-405">405 - Rahoon/Newcastle</ion-item>
+    <ion-item routerLink="/bus-407">407 - Bóthar an Chóiste</ion-item>
+    <ion-item routerLink="/bus-409">409 - Parkmore</ion-item>
+  </ion-list>
+</ion-content>
+
+<!-- Reusable footer navigation bar -->
+<app-footer-nav></app-footer-nav>

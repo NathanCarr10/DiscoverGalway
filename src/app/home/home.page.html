@@ -1,94 +1,95 @@
 <ion-page>
-<ion-header>
-  <ion-toolbar>
-    <ion-title>Discover Galway</ion-title>
-  </ion-toolbar>
-</ion-header>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Discover Galway</ion-title>
+    </ion-toolbar>
+  </ion-header>
 
-<ion-content fullscreen="true">
-  <ion-grid>
-    <ion-row>
-      <ion-col size="6">
-        <ion-card routerLink="/sightseeing">
-          <ion-img src="assets/icon/sightseeing.png" alt="Sightseeing Icon" style="height: 100px; object-fit: contain;"></ion-img>
-          <ion-card-header>
-            <ion-card-title>Sightseeing</ion-card-title>
-          </ion-card-header>
-        </ion-card>
-      </ion-col>
+  <ion-content fullscreen="true">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6">
+          <ion-card routerLink="/sightseeing">
+            <ion-img src="assets/icon/sightseeing.png" alt="Sightseeing Icon" class="icon-img"></ion-img>
+            <ion-card-header>
+              <ion-card-title>Sightseeing</ion-card-title>
+            </ion-card-header>
+          </ion-card>
+        </ion-col>
 
-      <ion-col size="6">
-        <ion-card routerLink="/food-drink">
-          <ion-img src="assets/icon/food-drink.png" alt="Food Icon" style="height: 100px; object-fit: contain;"></ion-img>
-          <ion-card-header>
-            <ion-card-title>Food & Drink</ion-card-title>
-          </ion-card-header>
-        </ion-card>
-      </ion-col>
-    </ion-row>
+        <ion-col size="6">
+          <ion-card routerLink="/food-drink">
+            <ion-img src="assets/icon/food-drink.png" alt="Food Icon" class="icon-img"></ion-img>
+            <ion-card-header>
+              <ion-card-title>Food & Drink</ion-card-title>
+            </ion-card-header>
+          </ion-card>
+        </ion-col>
+      </ion-row>
 
-    <ion-row>
-      <ion-col size="6">
-        <ion-card routerLink="/events">
-          <ion-img src="assets/icon/events.png" alt="Events Icon" style="height: 100px; object-fit: contain;"></ion-img>
-          <ion-card-header>
-            <ion-card-title>Events</ion-card-title>
-          </ion-card-header>
-        </ion-card>
-      </ion-col>
+      <ion-row>
+        <ion-col size="6">
+          <ion-card routerLink="/events">
+            <ion-img src="assets/icon/events.png" alt="Events Icon" class="icon-img"></ion-img>
+            <ion-card-header>
+              <ion-card-title>Events</ion-card-title>
+            </ion-card-header>
+          </ion-card>
+        </ion-col>
 
-      <ion-col size="6">
-        <ion-card routerLink="/map">
-          <ion-img src="assets/icon/map.png" alt="Map Icon" style="height: 100px; object-fit: contain;"></ion-img>
-          <ion-card-header>
-            <ion-card-title>Map</ion-card-title>
-          </ion-card-header>
-        </ion-card>
-      </ion-col>
-    </ion-row>
+        <ion-col size="6">
+          <ion-card routerLink="/map">
+            <ion-img src="assets/icon/map.png" alt="Map Icon" class="icon-img"></ion-img>
+            <ion-card-header>
+              <ion-card-title>Map</ion-card-title>
+            </ion-card-header>
+          </ion-card>
+        </ion-col>
+      </ion-row>
 
-    <ion-row>
-      <ion-col size="6">
-        <ion-card routerLink="/getting-around">
-          <ion-img src="assets/icon/transport.png" alt="Transport Icon" style="height: 100px; object-fit: contain;"></ion-img>
-          <ion-card-header>
-            <ion-card-title>Getting Around</ion-card-title>
-          </ion-card-header>
-        </ion-card>
-      </ion-col>
+      <ion-row>
+        <ion-col size="6">
+          <ion-card routerLink="/getting-around">
+            <ion-img src="assets/icon/transport.png" alt="Transport Icon" class="icon-img"></ion-img>
+            <ion-card-header>
+              <ion-card-title>Getting Around</ion-card-title>
+            </ion-card-header>
+          </ion-card>
+        </ion-col>
 
-      <ion-col size="6">
-        <ion-card routerLink="/emergency-info">
-          <ion-img src="assets/icon/emergency.png" alt="Emergency Icon" style="height: 100px; object-fit: contain;"></ion-img>
-          <ion-card-header>
-            <ion-card-title>Emergency</ion-card-title>
-          </ion-card-header>
-        </ion-card>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
+        <ion-col size="6">
+          <ion-card routerLink="/emergency-info">
+            <ion-img src="assets/icon/emergency.png" alt="Emergency Icon" class="icon-img"></ion-img>
+            <ion-card-header>
+              <ion-card-title>Emergency</ion-card-title>
+            </ion-card-header>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
 
-  <ion-card *ngIf="weather">
-    <ion-card-header>
-      <ion-card-title>Current Weather in Galway</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      <ion-item lines="none">
-        <ion-icon name="partly-sunny-outline" slot="start"></ion-icon>
-        <ion-label>
-          <h2>{{ weather.current.temp_c }}°C - {{ weather.current.condition.text }}</h2>
-          <p>Feels like: {{ weather.current.feelslike_c }}°C</p>
-        </ion-label>
-        <ion-img
-          [src]="'https:' + weather.current.condition.icon"
-          alt="Weather icon"
-          style="width: 50px; height: 50px"
-          slot="end">
-        </ion-img>
-      </ion-item>
-    </ion-card-content>
-  </ion-card>
-</ion-content>
+    <!-- Weather card -->
+    <ion-card *ngIf="weather">
+      <ion-card-header>
+        <ion-card-title>Current Weather in Galway</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-item lines="none">
+          <ion-icon name="partly-sunny-outline" slot="start"></ion-icon>
+          <ion-label>
+            <h2>{{ weather.current.temp_c }}°C - {{ weather.current.condition.text }}</h2>
+            <p>Feels like: {{ weather.current.feelslike_c }}°C</p>
+          </ion-label>
+          <ion-img
+            [src]="'https:' + weather.current.condition.icon"
+            alt="Weather icon"
+            class="weather-icon"
+            slot="end">
+          </ion-img>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+  </ion-content>
 
-<app-footer-nav></app-footer-nav>
+  <app-footer-nav></app-footer-nav>
 </ion-page>

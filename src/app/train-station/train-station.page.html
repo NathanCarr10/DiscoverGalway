@@ -1,41 +1,41 @@
 <ion-header>
-    <ion-toolbar>
-      <ion-title>Ceannt Station</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  
-  <ion-content class="ion-padding">
-    <ion-card>
-      <ion-img [src]="station.image" alt="Ceannt Station" style="height: 200px; object-fit: cover;"></ion-img>
-  
-      <ion-card-header>
-        <ion-card-title>{{ station.name }}</ion-card-title>
-      </ion-card-header>
-  
-      <ion-card-content>
-        <p>{{ station.description }}</p>
-  
-        <ion-button expand="block" fill="outline" color="primary" (click)="openDirections()">
-          Get Directions
-        </ion-button>
-  
-        <ion-button expand="block" fill="solid" color="tertiary" (click)="openWebsite()">
-          Visit Irish Rail Website
-        </ion-button>
-  
-        <ion-button expand="block" fill="solid" color="secondary" (click)="openLiveInfo()">
-          Live Arrivals & Departures
-        </ion-button>
-  
-        <ion-button expand="block" fill="solid" color="success" (click)="buyTickets()">
-          Buy Tickets
-        </ion-button>
-  
-        <ion-button expand="block" fill="clear" color="medium" (click)="callStation()">
-          Call Irish Rail
-        </ion-button>
-      </ion-card-content>
-    </ion-card>
-  </ion-content>
-  
-  <app-footer-nav></app-footer-nav>
+  <ion-toolbar>
+    <ion-title>Ceannt Station</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-card>
+    <ion-img [src]="station.image" alt="Ceannt Station" style="height: 200px; object-fit: cover;"></ion-img>
+
+    <ion-card-header>
+      <ion-card-title>{{ station.name }}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <p>{{ station.description }}</p>
+
+      <ion-button expand="block" fill="outline" color="primary" (click)="openDirections()">
+        Get Directions
+      </ion-button>
+
+      <ion-button expand="block" fill="solid" color="tertiary" (click)="openWebsite()">
+        Visit Irish Rail Website
+      </ion-button>
+
+      <ion-button expand="block" fill="solid" color="secondary" (click)="openLiveInfo()">
+        Live Arrivals & Departures
+      </ion-button>
+
+      <ion-button expand="block" fill="solid" color="success" (click)="buyTickets()">
+        Buy Tickets
+      </ion-button>
+
+      <ion-button expand="block" fill="clear" color="medium" (click)="callStation()">
+        Call Irish Rail
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+<app-footer-nav></app-footer-nav>

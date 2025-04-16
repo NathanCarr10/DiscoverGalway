@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { Geolocation } from '@capacitor/geolocation';
 import { FooterNavComponent } from '../footer-nav/footer-nav.component';
 
+// Page component for displaying emergency services info
 @Component({
   selector: 'app-emergency-info',
   templateUrl: './emergency-info.page.html',
@@ -12,6 +13,7 @@ import { FooterNavComponent } from '../footer-nav/footer-nav.component';
   imports: [CommonModule, IonicModule, FooterNavComponent]
 })
 export class EmergencyInfoPage {
+  // List of local emergency services
   services = [
     {
       type: 'Garda Station',
@@ -36,20 +38,22 @@ export class EmergencyInfoPage {
     }
   ];
 
+  // Uses device geolocation to open Google Maps directions
   async getDirections(destination: string) {
     try {
       const position = await Geolocation.getCurrentPosition();
       const { latitude, longitude } = position.coords;
       const encodedDest = encodeURIComponent(destination);
       const mapUrl = `https://www.google.com/maps/dir/?api=1&origin=${latitude},${longitude}&destination=${encodedDest}`;
-      window.open(mapUrl, '_system'); // Opens in external maps app or browser
+      window.open(mapUrl, '_system');
     } catch (err) {
       console.error('Location error:', err);
       alert('Unable to access your location. Please enable GPS.');
     }
   }
 
+  // Opens phone dialer with the selected service number
   callService(phone: string) {
-    window.open(`tel:${phone}`, '_system'); // Opens phone dialer
+    window.open(`tel:${phone}`, '_system');
   }
 }

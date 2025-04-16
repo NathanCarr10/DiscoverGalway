@@ -1,14 +1,16 @@
+// Zoom box styling
 pinch-zoom {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    overflow: hidden;
-  }
-  
-  ion-header {
-    padding-top: 40px;
-  }
-  
-  ion-toolbar {
-    min-height: 60px;
-  }
-  
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+// Extra spacing for safe header display
+ion-header {
+  padding-top: 40px;
+}
+
+// Standard toolbar height
+ion-toolbar {
+  min-height: 60px;
+}

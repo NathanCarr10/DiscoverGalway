@@ -5,17 +5,27 @@
 </ion-header>
 
 <ion-content>
+  <!-- Loop through events and display each in a card -->
   <ion-card *ngFor="let event of events">
     <ion-card-header>
       <ion-card-title>{{ event.name }}</ion-card-title>
       <ion-card-subtitle>{{ event.date }}</ion-card-subtitle>
     </ion-card-header>
 
-    <ion-img [src]="event.image" alt="{{ event.name }}" style="height: 200px; object-fit: cover;"></ion-img>
+    <ion-img
+      [src]="event.image"
+      alt="{{ event.name }}"
+      style="height: 200px; object-fit: cover;">
+    </ion-img>
 
     <ion-card-content>
       <p>{{ event.description }}</p>
-      <ion-button fill="outline" size="small" color="primary" (click)="openMap(event.mapLink)">
+
+      <ion-button
+        fill="outline"
+        size="small"
+        color="primary"
+        (click)="openMap(event.mapLink)">
         Find on Map
       </ion-button>
     </ion-card-content>

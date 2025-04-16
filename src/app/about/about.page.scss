@@ -1,21 +1,22 @@
 h3 {
-    margin-top: 1rem;
-    font-weight: bold;
-  }
-  
-  ul {
-    padding-left: 1.4rem;
-  }
-  
-  ion-card-title {
-    font-size: 1.2rem;
-  }
-  
-  ion-header {
-    padding-top: 40px;
-  }
-  
-  ion-toolbar {
-    min-height: 60px;
-  }
-  
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+ul {
+  padding-left: 1.4rem;
+}
+
+ion-card-title {
+  font-size: 1.2rem;
+}
+
+/* Space for the toolbar (especially useful with safe areas on mobile) */
+ion-header {
+  padding-top: 40px;
+}
+
+/* Customize toolbar height if needed */
+ion-toolbar {
+  min-height: 60px;
+}

@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
 import { CommonModule } from '@angular/common';
-import { FooterNavComponent } from '../footer-nav/footer-nav.component';
 import { RouterModule } from '@angular/router';
+import { FooterNavComponent } from '../footer-nav/footer-nav.component';
 
 @Component({
   selector: 'app-sightseeing',
@@ -11,10 +11,8 @@ import { RouterModule } from '@angular/router';
   standalone: true,
   imports: [CommonModule, IonicModule, RouterModule, FooterNavComponent]
 })
-
-// SightseeingPage component to display a list of sights in Galway
-// and open them in a map application when clicked.
 export class SightseeingPage {
+  // List of sightseeing locations in Galway
   sights = [
     {
       name: 'Galway Cathedral',
@@ -39,7 +37,6 @@ export class SightseeingPage {
       description: 'Scenic seaside walk and beach area.',
       image: 'assets/images/salthill-prom.jpg',
       mapLink: 'geo:0,0?q=Galway+Salthill+Prom'
-
     },
     {
       name: 'The Latin Quarter',
@@ -59,10 +56,10 @@ export class SightseeingPage {
       image: 'assets/images/aquarium.jpg',
       mapLink: 'geo:0,0?q=Galway+Salthill+Aquarium'
     }
-  ];  
+  ];
 
+  // Open selected location in external maps app
   openMap(link: string) {
-    window.open(link, '_system'); // opens in external app (Maps)
+    window.open(link, '_system');
   }
-  
 }

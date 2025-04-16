@@ -1,14 +1,16 @@
+// Styling for zoomable timetable card
 pinch-zoom {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    overflow: hidden;
-  }
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
 
-  ion-header {
-    padding-top: 40px;
-  }
-  
-  ion-toolbar {
-    min-height: 60px;
-  }
-  
+// Top spacing for devices with notches
+ion-header {
+  padding-top: 40px;
+}
+
+// Maintain consistent toolbar height
+ion-toolbar {
+  min-height: 60px;
+}

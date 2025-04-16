@@ -4,7 +4,6 @@ import { CommonModule } from '@angular/common';
 import { Geolocation } from '@capacitor/geolocation';
 import { FooterNavComponent } from '../footer-nav/footer-nav.component';
 
-
 @Component({
   selector: 'app-train-station',
   templateUrl: './train-station.page.html',
@@ -13,6 +12,7 @@ import { FooterNavComponent } from '../footer-nav/footer-nav.component';
   imports: [CommonModule, IonicModule, FooterNavComponent],
 })
 export class TrainStationPage {
+  // Ceannt Station details and related URLs
   station = {
     name: 'Ceannt Station',
     image: 'assets/images/ceannt-station.jpg',
@@ -24,6 +24,7 @@ export class TrainStationPage {
     phone: '+35318733622'
   };
 
+  // Opens Google Maps with directions from user's location
   async openDirections() {
     try {
       const position = await Geolocation.getCurrentPosition();
@@ -39,18 +40,22 @@ export class TrainStationPage {
     }
   }
 
+  // Open station info website
   openWebsite() {
     window.open(this.station.website, '_system');
   }
 
+  // Open live train info
   openLiveInfo() {
     window.open(this.station.liveInfo, '_system');
   }
 
+  // Open ticket purchase page
   buyTickets() {
     window.open(this.station.tickets, '_system');
   }
 
+  // Call the train station
   callStation() {
     window.open(`tel:${this.station.phone}`, '_system');
   }

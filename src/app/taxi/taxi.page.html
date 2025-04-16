@@ -1,27 +1,27 @@
 <ion-header>
-    <ion-toolbar>
-      <ion-title>Taxi</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  
-  <ion-content class="ion-padding">
-    <ion-card>
-      <ion-img [src]="taxiCompany.image" alt="Taxi Company Logo" style="height: 200px; object-fit: cover;"></ion-img>
-  
-      <ion-card-header>
-        <ion-card-title>{{ taxiCompany.name }}</ion-card-title>
-      </ion-card-header>
-  
-      <ion-card-content>
-        <ion-button expand="block" fill="outline" color="primary" (click)="openNearestTaxiRank()">
-          Find Nearest Taxi Rank
-        </ion-button>
-  
-        <ion-button expand="block" color="secondary" (click)="callTaxi()">
-          Call Taxi
-        </ion-button>
-      </ion-card-content>
-    </ion-card>
-  </ion-content>
-  
-  <app-footer-nav></app-footer-nav>
+  <ion-toolbar>
+    <ion-title>Taxi</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-card>
+    <ion-img [src]="taxiCompany.image" alt="Taxi Company Logo" style="height: 200px; object-fit: cover;"></ion-img>
+
+    <ion-card-header>
+      <ion-card-title>{{ taxiCompany.name }}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-button expand="block" fill="outline" color="primary" (click)="openNearestTaxiRank()">
+        Find Nearest Taxi Rank
+      </ion-button>
+
+      <ion-button expand="block" color="secondary" (click)="callTaxi()">
+        Call Taxi
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+<app-footer-nav></app-footer-nav>

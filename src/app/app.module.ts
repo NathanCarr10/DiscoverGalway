@@ -17,24 +17,20 @@ import { environment } from '../environments/environment';
   declarations: [AppComponent],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(),
-    AppRoutingModule,
-    IonicStorageModule.forRoot(),
-    HttpClientModule,
+    IonicModule.forRoot(),           // Initialize Ionic framework
+    AppRoutingModule,                // App routes
+    IonicStorageModule.forRoot(),   // Local storage
+    HttpClientModule,               // Enables HTTP requests
 
-    // PWA / Service Worker config for offline support
+    // Service Worker registration for PWA support
     ServiceWorkerModule.register('ngsw-worker.js', {
-      enabled: !isDevMode(), // Only enabled in production builds
-      registrationStrategy: 'registerWhenStable:30000' // After 30s or when stable
-    }),
-     ServiceWorkerModule.register('ngsw-worker.js', {
-       enabled: !isDevMode(),
-       // Register the ServiceWorker as soon as the application is stable
-       // or after 30 seconds (whichever comes first).
-       registrationStrategy: 'registerWhenStable:30000'
-     })
+      enabled: !isDevMode(), // Only enable in production builds
+      registrationStrategy: 'registerWhenStable:30000' // Register after 30s or once stable
+    })
   ],
-  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
+  providers: [
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy } // Enables Ionic-style routing reuse
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

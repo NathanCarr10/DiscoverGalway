@@ -1,8 +1,9 @@
+// Add space at top for devices with notches
 ion-header {
-    padding-top: 40px;
-  }
-  
-  ion-toolbar {
-    min-height: 60px;
-  }
-  
+  padding-top: 40px;
+}
+
+// Ensure toolbar has consistent height
+ion-toolbar {
+  min-height: 60px;
+}

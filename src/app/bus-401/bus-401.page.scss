@@ -1,14 +1,16 @@
+// Visual border around zoomable area
 pinch-zoom {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    overflow: hidden;
-  }
-  
-  ion-header {
-    padding-top: 40px;
-  }
-  
-  ion-toolbar {
-    min-height: 60px;
-  }
-  
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+// Space at top for safe area / status bar
+ion-header {
+  padding-top: 40px;
+}
+
+// Toolbar customization
+ion-toolbar {
+  min-height: 60px;
+}
