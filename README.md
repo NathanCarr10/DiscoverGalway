@@ -97,12 +97,27 @@ Created by Nathan Carr.
 
 ## 📸 Screenshots
 Home Screen  
-![Home](screenshots/homepage-screenshot.jpg)
+![homepage-screenshot](https://github.com/user-attachments/assets/926bbdbe-40a5-4b4d-9942-080c71268222)
 
 Events Page  
-![Events](screenshots/events-screenshot.jpg)
+![events-screenshot](https://github.com/user-attachments/assets/dd209383-5f48-4cd4-845c-eedb7e4cbc33)
 
 Map View  
-![Map](screenshots/map-screenshot.jpg)
+![map-screenshot](https://github.com/user-attachments/assets/09a0b5f7-f74a-4228-a458-860c66b17f0e)
+
+Timetable Page
+![timetable-screenshot](https://github.com/user-attachments/assets/ecd6fe5f-eeed-419f-9891-7638cedaaa8d)
+
+Train Station Page
+![train-station-screenshot](https://github.com/user-attachments/assets/81ea27ac-1cfa-4250-b612-9fa23cd3975b)
+
+Emergency Information Page
+![emergency-info-screenshot](https://github.com/user-attachments/assets/c6522b42-7b0d-4749-ab85-6c38490b8a05)
+
+About Page
+![about-screenshot](https://github.com/user-attachments/assets/deccf7b2-5294-418c-9e51-1a94439b0f64)
+
+
+
 
 
