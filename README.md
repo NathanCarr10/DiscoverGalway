@@ -97,7 +97,8 @@ Created by Nathan Carr.
 
 ## 📸 Screenshots
 Home Screen  
-![homepage-screenshot](https://github.com/user-attachments/assets/926bbdbe-40a5-4b4d-9942-080c71268222)
+![homepage-screenshot](https://github.com/user-attachments/assets/4900365d-ccd9-42c6-839e-7b208fa06ef9)
+
 
 Events Page  
 ![events-screenshot](https://github.com/user-attachments/assets/dd209383-5f48-4cd4-845c-eedb7e4cbc33)
